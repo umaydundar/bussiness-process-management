@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tHGov6qfY9RW8fNM+fXHzhbNJVc/c6sywaw50uZoSYU=",
+  "Hash": "C3Y8dt9iXsaNt2QY7PmvL63PRW+4JLO6m3YdnUJcMck=",
   "Source": "WebApplication2",
   "BasePath": "_content/WebApplication2",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebApplication2\\wwwroot",
       "Source": "WebApplication2",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\css\\alternative_list_view.css",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\css\\alternative_list_view.css",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "css/alternative_list_view.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\alternative_list_view.css"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\css\\create_process.css",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\css\\create_process.css",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "css/create_process.css",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\css\\create_process.css"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\css\\login_page.css",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\css\\login_page.css",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "css/login_page.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login_page.css"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\css\\styles.css",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\alternative_list_view.html",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\alternative_list_view.html",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "html/alternative_list_view.html",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\html\\alternative_list_view.html"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\create_process.html",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\create_process.html",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "html/create_process.html",
       "AssetKind": "All",
@@ -131,29 +131,10 @@
       "OriginalItemSpec": "wwwroot\\html\\create_process.html"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\index.html",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\login_page.html",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
-      "BasePath": "_content/WebApplication2",
-      "RelativePath": "html/index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\html\\index.html"
-    },
-    {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\login_page.html",
-      "SourceId": "WebApplication2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "html/login_page.html",
       "AssetKind": "All",
@@ -169,10 +150,29 @@
       "OriginalItemSpec": "wwwroot\\html\\login_page.html"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\taskDetails.html",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\main.html",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "html/main.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\main.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\taskDetails.html",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "html/taskDetails.html",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\html\\taskDetails.html"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\alternative_list_view.js",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\alternative_list_view.js",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "js/alternative_list_view.js",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\js\\alternative_list_view.js"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\app.js",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\app.js",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "js/app.js",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\js\\app.js"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\controller.js",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\controller.js",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "js/controller.js",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\js\\controller.js"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\create_process.js",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\create_process.js",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "js/create_process.js",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\js\\create_process.js"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\login_page.js",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\login_page.js",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "js/login_page.js",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\js\\login_page.js"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\model.js",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\model.js",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "js/model.js",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\js\\model.js"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\taskDetails.js",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\taskDetails.js",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "js/taskDetails.js",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\js\\taskDetails.js"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\view.js",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\view.js",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "RelativePath": "js/view.js",
       "AssetKind": "All",

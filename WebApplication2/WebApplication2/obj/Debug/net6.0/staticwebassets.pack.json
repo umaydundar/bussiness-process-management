@@ -1,71 +1,71 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\css\\alternative_list_view.css",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\css\\alternative_list_view.css",
       "PackagePath": "staticwebassets\\css\\alternative_list_view.css"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\css\\create_process.css",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\css\\create_process.css",
       "PackagePath": "staticwebassets\\css\\create_process.css"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\css\\login_page.css",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\css\\login_page.css",
       "PackagePath": "staticwebassets\\css\\login_page.css"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\css\\styles.css",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\alternative_list_view.html",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\alternative_list_view.html",
       "PackagePath": "staticwebassets\\html\\alternative_list_view.html"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\create_process.html",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\create_process.html",
       "PackagePath": "staticwebassets\\html\\create_process.html"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\index.html",
-      "PackagePath": "staticwebassets\\html\\index.html"
-    },
-    {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\login_page.html",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\login_page.html",
       "PackagePath": "staticwebassets\\html\\login_page.html"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\html\\taskDetails.html",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\main.html",
+      "PackagePath": "staticwebassets\\html\\main.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\html\\taskDetails.html",
       "PackagePath": "staticwebassets\\html\\taskDetails.html"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\alternative_list_view.js",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\alternative_list_view.js",
       "PackagePath": "staticwebassets\\js\\alternative_list_view.js"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\app.js",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\app.js",
       "PackagePath": "staticwebassets\\js\\app.js"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\controller.js",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\controller.js",
       "PackagePath": "staticwebassets\\js\\controller.js"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\create_process.js",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\create_process.js",
       "PackagePath": "staticwebassets\\js\\create_process.js"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\login_page.js",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\login_page.js",
       "PackagePath": "staticwebassets\\js\\login_page.js"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\model.js",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\model.js",
       "PackagePath": "staticwebassets\\js\\model.js"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\taskDetails.js",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\taskDetails.js",
       "PackagePath": "staticwebassets\\js\\taskDetails.js"
     },
     {
-      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\wwwroot\\js\\view.js",
+      "Id": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\wwwroot\\js\\view.js",
       "PackagePath": "staticwebassets\\js\\view.js"
     },
     {

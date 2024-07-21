@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NV4ZHfOAjlM=",
+  "dgSpecHash": "yUvB0PlhGas=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process_management\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
+  "projectFilePath": "C:\\Users\\HP\\OneDrive\\Masaüstü\\process-management-git\\bussiness-process-management\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
