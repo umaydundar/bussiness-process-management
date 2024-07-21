@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-color: #f4f4f6;
+    --dark-color: #2c2f31;
+    --dot-color: #ff972a;
+    --search-bar-color: #efefef;
+    --task-color: #ebebeb;
+    --background-color: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--background-color);
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid var(--dark-color);
+    background-color: var(--search-bar-color);
+    font-size: 1rem;
+}
+
+.search-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--dark-color);
+}
+
+.search-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--task-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.search-option .content {
+    flex-grow: 1;
+}
+
+.search-option .dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.search-option .dots .dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--dot-color);
+    border-radius: 50%;
+}
+
+.create-new {
+    margin-left: 20px;
+    color: var(--dark-color);
+    cursor: pointer;
+    margin-top: 0%;
+}
+
+/* Text Classes */
+.text-lg {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.text-md-l {
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+.text-md-b {
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.text-sm-b{
+    font-size: 0.8rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.text-sm-l{
+    font-size: 0.8rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-weight: lighter;
+}
+
+.level-container{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.margin-between{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.new-content-container{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-grow: 1;
+}
