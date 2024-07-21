@@ -19,3 +19,6 @@ mono_crash.*
 
 # Visual Studio cache files
 .vs/
+
+# Ignore Visual Studio index files
+*.vsidx
