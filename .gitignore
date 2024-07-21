@@ -1,0 +1,21 @@
+# Ignore Visual Studio temporary files, build results, and
+# Include if you have a public project using Visual Studio
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# User-specific files (Mono Auto Generated)
+*.pidb
+*.log
+
+# VS Code directories
+.vscode/
+
+# Visual Studio cache files
+.vs/
