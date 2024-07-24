@@ -15,70 +15,9 @@
                     <input class="search-bar" type="search" id="search" placeholder="Departman adı, anahtar kelime, açıklamaya göre aranabilir. Boş bırakılırsa tüm liste gelebilir." autocomplete="on">
                     <button id="newTaskSearchButton">Ara</button>
                 </div>
-                <div class="search-options">
-
-                    <div class="search-option">
-                        <div class="content">
-                            <div class="new-content-container">
-                                <h1 class="text-lg">Yeni Personel Şablon</h1>
-                                <h4 class="create-new text-sm-b">+Yeni Oluştur</h4>
-                            </div>
-                            <h2 class="text-md-l">Yeni personel alım süreci örnek şablon</h2>
-                            <div class="margin-between"></div>
-                            <div class="level-container">
-                                <h3 class="text-md-b">Aşamalar:</h3>
-                                <div class="dots">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="search-option">
-                        <div class="content">
-                            <div class="new-content-container">
-                                <h1 class="text-lg">Sunucu Bakım Şablon</h1>
-                                <h4 class="create-new text-sm-b">+Yeni Oluştur</h4>
-                            </div>
-                            <h2 class="text-md-l">Yazılım sunucu bakım örnek şablon</h2>
-                            <div class="margin-between"></div>
-                            <div class="level-container">
-                                <h3 class="text-md-b">Aşamalar:</h3>
-                                <div class="dots">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="search-option">
-                        <div class="content">
-                            <div class="new-content-container">
-                                <h1 class="text-lg">Sunucu Güncelleme Şablon</h1>
-                                <h4 class="create-new text-sm-b">+Yeni Oluştur</h4>
-                            </div>
-                            <h2 class="text-md-l">Yazılım sunucu güncelleme örnek şablon</h2>
-                            <div class="margin-between"></div>
-                            <div class="level-container">
-                                <h3 class="text-md-b">Aşamalar:</h3>
-                                <div class="dots">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
+                <div class="search-options" id="search-options" >
+                        <!--dynamically created serach options are generated there-->
+                </div>
             </div>
         </div>
         <div class="right-panel">
@@ -105,15 +44,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Dynamically added task rows will appear here -->
+                  <!--dynamically created task entities are generated there-->
                 </tbody>
             </table>
         </div>
-    </div>
+    </div> 
     <script src="../js/model.js"></script>
     <script src="../js/view.js"></script>
     <script src="../js/controller.js"></script>
     <script src="../js/app.js"></script>
-    <script src="../js/create_process.js>"></script>
+    <script src="../js/search.js"></script> 
+    <script src="../js/script.js"></script>
 </body>
 </html>

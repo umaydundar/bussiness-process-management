@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using NuGet.Protocol.Plugins;
 
 namespace WebApplication2.Controllers
 {
@@ -29,6 +30,7 @@ namespace WebApplication2.Controllers
             }
             return await _context.Users.ToListAsync();
         }
+
         [HttpGet("login")]
         public async Task<ActionResult<User>> Login(string email, string password)
         {
@@ -177,7 +179,11 @@ namespace WebApplication2.Controllers
             return (_context.Users?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
-
+      /*  private bool LoginUserExists(string email, string password)
+        {
+            return (_context.Users.Any(u =>u.Email == email && u.Password == password));
+        }
+      */
 
         // Using BCrypt
         private string CreatePasswordHash(string password)
@@ -189,8 +195,5 @@ namespace WebApplication2.Controllers
         {
             return BCrypt.Net.BCrypt.Verify(password, storedHash);
         }
-
-
-
     }
 }

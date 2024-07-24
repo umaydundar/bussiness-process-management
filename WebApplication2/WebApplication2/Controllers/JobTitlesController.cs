@@ -11,6 +11,12 @@ namespace WebApplication2.Controllers
     public class JobTitlesController : ControllerBase
     {
         private readonly JobTitleService _jobTitleService;
+        private readonly MANAGEMENTContext _context;
+
+        public JobTitlesController(MANAGEMENTContext context)
+        {
+            _context = context;
+        }
 
         //public JobTitlesController(JobTitleService jobTitleService)
         //{

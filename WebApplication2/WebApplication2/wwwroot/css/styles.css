@@ -73,7 +73,7 @@ table {
     margin-top: 20px; /* Space above the table */
 }
 
-th, td {
+.th, .td {
     text-align: left;
     padding: 8px;
     border: 1px solid #ddd; /* Solid border for table cells */
@@ -123,6 +123,7 @@ th {
 
 .search-option {
     display: flex;
+    flex-grow:1;
     justify-content: space-between;
     align-items: center;
     background-color: var(--task-color);
