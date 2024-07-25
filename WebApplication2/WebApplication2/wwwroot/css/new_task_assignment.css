@@ -134,7 +134,7 @@ td {
     display: none;
 }
 
- .checkmark-div{
+ .completed-div{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -225,4 +225,54 @@ td {
     display: flex;
     flex-grow: calc();
     flex-direction: column;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal .modal-create-new-input-btn{
+    display: flex;
+    justify-content: center;
+    background-color: var(--acceptance-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: var(--light-color);
 }

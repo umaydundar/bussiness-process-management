@@ -14,7 +14,7 @@ async function createProcessList() {
                     <div class="content">
                         <div class="new-content-container">
                             <h1 class="text-lg">` + task.name + `</h1>
-                            <h4 class="create-new text-sm-b">+Yeni Oluştur</h4>
+                            <a class="create-new text-sm-b" href= ../html/new_task_assignment.html >+Yeni Oluştur</a>
                         </div>
                         <h2 class="text-md-l"> ` + task.description + `</h2>
                         <div class="margin-between"></div>

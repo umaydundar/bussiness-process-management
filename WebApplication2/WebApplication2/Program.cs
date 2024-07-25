@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using System;
 using WebApplication2.Models;
 using Task = System.Threading.Tasks.Task;
 
@@ -10,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddScoped<JobTitleService>();  // Register your JobTitleService
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<UserLogService>();
 builder.Services.AddScoped<TaskService>();
 
 builder.Services.AddDbContext<MANAGEMENTContext>(options =>

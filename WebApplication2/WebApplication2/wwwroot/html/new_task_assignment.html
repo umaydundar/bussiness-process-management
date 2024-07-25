@@ -10,11 +10,6 @@
     <div>
         <h1>Task Step Name</h1>
         <h2>Task Description</h2>
-        <div>
-            <div class="add-input">
-                <h4 class="text-sm-l">+Create new process step</h4>
-            </div>
-        </div>
     </div>
     <table class="task-list">
         <thead>
@@ -28,7 +23,7 @@
             <tr>
                 <td>
                     <div class="section">
-                        <div  class="toogle-section" onclick="toggleSection(this)">
+                        <div  class="toggle-section" onclick="toggleSection(this)">
                             <div class="arrow-div">
                                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                     <path d="M7 10l5 5 5-5H7z"/>
@@ -45,7 +40,22 @@
                             </div>
                             <div class="add-input">
                                 <i class="fas fa-plus"></i>
-                                <h4 class="text-sm-l">+Yeni İnput Oluştur</h4>
+                                <button class="modal-btn text-sm-l" id="new-input-modal-button">+Yeni İnput Oluştur</button>
+                            </div>
+                            <div id="new-input-modal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Choose new input type</p>
+                                    <select>
+                                        <option>Text Area</option>
+                                        <option>Selection box</option>
+                                        <option>Checkbox</option>
+                                        <option>File upload</option>
+                                    </select>
+                                    <p>New input name</p>
+                                    <input type="text" class="input-area-si text-sm" id="new-input-name" name="input-name" />
+                                    <button class="modal-create-new-input-btn">Create New Input</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -55,10 +65,9 @@
                         <div class="dots">
                             <span class="dot-b"></span>
                         </div>
-                        <select class="input-area-si text-sm" id="assign-users" name="permissions" required>
-                            <option value="Erişim">Ali</option>
-                            <option value="Erişim">Ayşe</option>
-                            <option value="Erişim">Ahmet</option>
+                        <select class="input-area-si text-sm" id="assign-users" name="assignments" required>
+                            <option>Choose</option>
+                           <!--dynamically created options-->
                         </select>
                     </div>
                 </td>
@@ -67,12 +76,13 @@
                         <h3 class="text-sm-b">Görev Ataması Yapılmadı</h3>
                     </div>
                     <div class="in-progress-div">
-                        <h3 class="text-sm-b">Devam ediyor</h3>
-                        <div class="checkmark-continue"></div>
+                        <div>
+                            <h3 class="text-sm-b">Devam ediyor</h3>
+                            <div class="checkmark-continue"></div>
+                        </div>
+                        <button class="btn">Kaydet</button>
                     </div>
-                    <button class="btn">Kaydet</button>
-                    </div>
-                    <div class="checkmark-div">
+                    <div class="completed-div">
                         <h3 class="text-sm-b">Tamamlandı</h3>
                         <div class="checkmark"></div>
                     </div>
@@ -81,7 +91,7 @@
             <tr>
                 <td>
                     <div class="section">
-                        <div  class="toogle-section" onclick="toggleSection(this)">
+                        <div  class="toggle-section" onclick="toggleSection(this)">
                             <div class="arrow-div">
                                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                     <path d="M7 10l5 5 5-5H7z"/>
@@ -97,7 +107,23 @@
                                 </select>
                             </div>
                             <div class="add-input">
-                                <h4 class="text-sm-l">+Yeni İnput Oluştur</h4>
+                                <button class="modal-btn text-sm-l" id="new-input-modal-button">+Yeni İnput Oluştur</button>
+                            </div>
+
+                            <div id="new-input-modal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Choose new input type</p>
+                                    <select>
+                                        <option>Text Area</option>
+                                        <option>Selection box</option>
+                                        <option>Checkbox</option>
+                                        <option>File upload</option>
+                                    </select>
+                                    <p>New input name</p>
+                                    <input type="text" class="input-area-si text-sm" id="new-input-name" name="input-name" />
+                                    <button class="modal-create-new-input-btn">Create New Input</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -107,25 +133,24 @@
                         <div class="dots">
                             <span class="dot-b"></span>
                         </div>
-                        <select class="input-area-si text-sm" id="assign-users" name="permissions" required>
-                            <option value="Erişim">Ali</option>
-                            <option value="Erişim">Ayşe</option>
-                            <option value="Erişim">Ahmet</option>
+                        <select class="input-area-si text-sm" id="assign-users" name="assignments" required>
+                            <option>Choose</option>
+                            <!--dynamically created options-->
                         </select>
                     </div>
                 </td>
                 <td>
                     <div class="not-started-div">
-                        <h3 class="text-sm-b">Görev Ataması yapılmadı</h3>
+                        <h3 class="text-sm-b">Görev Ataması Yapılmadı</h3>
                     </div>
-                    <div>
-                        <div class="in-progress-div">
+                    <div class="in-progress-div">
+                        <div>
                             <h3 class="text-sm-b">Devam ediyor</h3>
                             <div class="checkmark-continue"></div>
                         </div>
                         <button class="btn">Kaydet</button>
                     </div>
-                    <div class="checkmark-div">
+                    <div class="completed-div">
                         <h3 class="text-sm-b">Tamamlandı</h3>
                         <div class="checkmark"></div>
                     </div>
@@ -134,7 +159,7 @@
             <tr>
                 <td>
                     <div class="section">
-                        <div  class="toogle-section" onclick="toggleSection(this)">
+                        <div  class="toggle-section" onclick="toggleSection(this)">
                             <div class="arrow-div">
                                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                     <path d="M7 10l5 5 5-5H7z"/>
@@ -156,12 +181,28 @@
                                 <label class="text-sm-l" for="office-access">Office programlarına erişim için email hesabı</label>
                             </div>
                             <div>
-                                <label class="text-sm-l"for="upload">Dosya Yükle</label>
+                                <label class="text-sm-l" for="upload">Dosya Yükle</label>
                                 <input type="file" id="upload" name="upload">
                             </div>
                             <div class="add-input">
                                 <i class="fas fa-plus"></i>
-                                <h4 class="text-sm-l">+Yeni İnput Oluştur</h4>
+                                <button class=" modal-btn text-sm-l" id="new-input-modal-button">+Yeni İnput Oluştur</button>
+                            </div>
+
+                            <div id="new-input-modal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Choose new input type</p>
+                                    <select>
+                                        <option>Text Area</option>
+                                        <option>Selection box</option>
+                                        <option>Checkbox</option>
+                                        <option>File upload</option>
+                                    </select>
+                                    <p>New input name</p>
+                                    <input type="text" class="input-area-si text-sm" id="new-input-name" name="input-name" />
+                                    <button class="modal-create-new-input-btn">Create New Input</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,25 +212,24 @@
                         <div class="dots">
                             <span class="dot-b"></span>
                         </div>
-                        <select class="input-area-si text-sm" id="assign-users" name="permissions" required>
-                            <option value="Erişim">Ali</option>
-                            <option value="Erişim">Ayşe</option>
-                            <option value="Erişim">Ahmet</option>
+                        <select class="input-area-si text-sm" id="assign-users" name="assignments" required>
+                            <option>Choose</option>
+                            <!--dynamically created options-->
                         </select>
                     </div>
                 </td>
                 <td>
                     <div class="not-started-div">
-                        <h3 class="text-sm-b">Başlanmadı</h3>
+                        <h3 class="text-sm-b">Görev Ataması Yapılmadı</h3>
                     </div>
-                    <div>
-                        <div class="in-progress-div">
+                    <div class="in-progress-div">
+                        <div>
                             <h3 class="text-sm-b">Devam ediyor</h3>
                             <div class="checkmark-continue"></div>
                         </div>
                         <button class="btn">Kaydet</button>
                     </div>
-                    <div class="checkmark-div">
+                    <div class="completed-div">
                         <h3 class="text-sm-b">Tamamlandı</h3>
                         <div class="checkmark"></div>
                     </div>
@@ -197,7 +237,6 @@
             </tr>
         </tbody>
     </table>
-    
 </body>
 <script src="../js/new_task_assignment.js"></script>
 </html>

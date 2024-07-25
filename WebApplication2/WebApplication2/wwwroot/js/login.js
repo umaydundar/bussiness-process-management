@@ -1,4 +1,4 @@
-sfunction showForm(formType) {
+function showForm(formType) {
     document.getElementById('options-container').style.display = 'none';
     if (formType === 'login') {
         document.getElementById('login-form').style.display = 'block';
@@ -8,6 +8,13 @@ sfunction showForm(formType) {
         document.getElementById('signup-form').style.display = 'block';
     }
 }
+
+/*document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('options-container').style.display = 'none';
+    document.getElementByClassName("btn - login").addEventListener("click", showForm("login"));
+    document.getElementByClassName("btn-signup").addEventListener("click", showForm("signup"));
+});*/
+
 
 /*document.addEventListener('DOMContentLoaded', function () {
 
