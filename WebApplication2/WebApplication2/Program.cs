@@ -13,6 +13,8 @@ builder.Services.AddScoped<JobTitleService>();  // Register your JobTitleService
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<UserLogService>();
 builder.Services.AddScoped<TaskService>();
+builder.Services.AddScoped<HiringDetailsService>();
+
 
 builder.Services.AddDbContext<MANAGEMENTContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ManagementDatabase")));

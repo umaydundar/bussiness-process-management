@@ -204,7 +204,47 @@ namespace WebApplication2.Models
                     .HasMaxLength(10)
                     .IsUnicode(false);
             });
-
+             modelBuilder.Entity<HiringDetails>(entity =>
+             {
+                 
+            
+                 entity.HasKey(e => e.DetailID);  // Set DetailID as the primary key
+                 entity.ToTable("HiringDetails");
+            
+                 entity.Property(e => e.DetailID).HasColumnName("DetailID");
+            
+                 entity.Property(e => e.TaskID).HasColumnType("TaskID");
+            
+                 entity.Property(e => e.ResponsibleUserID).HasColumnType("ResponsibleUserID");
+            
+            
+                 entity.Property(e => e.CompletionDate)
+                     .HasColumnType("CompletionDate")
+                     .HasDefaultValueSql("(getdate())");
+            
+                 entity.Property(e => e.ResponsibleUserName).HasColumnName("ResponsibleUserName");
+            
+                 entity.Property(e => e.HireName).HasColumnName("HireName");
+            
+                 entity.Property(e => e.Department).HasColumnName("Department");
+            
+                 entity.Property(e => e.StepDescription).HasColumnName("StepDescription");
+            
+                 entity.Property(e => e.Status).HasColumnName("Status");
+            
+                 entity.Property(e => e.UserName2).HasColumnName("UserName2");
+            
+                 entity.Property(e => e.UserName3).HasColumnName("UserName3");
+            
+                 entity.Property(e => e.Status2).HasColumnName("Status2");
+            
+                 entity.Property(e => e.Status3).HasColumnName("Status3");
+            
+                 entity.Property(e => e.CompletionDate2).HasColumnName("CompletionDate2");
+            
+                 entity.Property(e => e.CompletionDate3).HasColumnName("CompletionDate3");
+            
+             });
             modelBuilder.Entity<TaskRaciC>(entity =>
             {
                 entity.ToTable("TASK_RACI_C");

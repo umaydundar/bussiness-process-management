@@ -1,13 +1,13 @@
-﻿document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const searchField = document.getElementById('searchField');
     const searchButton = document.getElementById('searchButton');
     const filterField = document.getElementById('filterField');
     const taskTable = document.querySelector('#taskTable tbody');
 
     const apiEndpoints = {
-        tasks: 'https://localhost:5001/api/tasks',  // Change this to your actual Tasks API endpoint
-        users: 'https://localhost:5001/api/users',
-        auth: 'https://localhost:5001/api/auth'
+        tasks: 'https://localhost:5001/api/Tasks',  // Change this to your actual Tasks API endpoint
+        users: 'https://api.yourdomain.com/users',
+        auth: 'https://api.yourdomain.com/auth'
     };
 
     let tasks = [];
@@ -30,10 +30,12 @@
     function calculateProgress(status, step) {
         return (status / step) * 100;
     }
+ 
 
     function renderTasks(filteredTasks) {
         taskTable.innerHTML = '';
         filteredTasks.forEach(task => {
+            console.log(task);
             const row = taskTable.insertRow();
             const progressPercentage = (task.refTaskStatus / task.refTaskStep) * 100;
 
@@ -41,7 +43,7 @@
             row.insertCell(1).textContent = task.description;
             row.insertCell(2).innerHTML = `<progress value="${task.refTaskStatus}" max="${task.refTaskStep}"></progress> ${progressPercentage.toFixed(2)}%`;
             row.insertCell(3).textContent = task.participants;  // Adjust based on your actual API response structure
-            row.insertCell(4).textContent = task.refCustomer;      // Placeholder for creator
+            row.insertCell(4).textContent = task.refCustomer ;      // Placeholder for creator
             row.insertCell(5).textContent = task.beginDate;
             row.insertCell(6).textContent = task.endDate;
 
@@ -49,8 +51,8 @@
         });
     }
 
-    function openTaskDetails(taskId) {
-        window.location.href = `task-details.html?taskId=${taskId}`;  // Assuming you have a detail page setup
+    function openTaskDetails(id) {
+        window.location.href = `taskDetail.html?taskId=${id}`;  // Assuming you have a detail page setup
     }
 
     function filterTasks() {
