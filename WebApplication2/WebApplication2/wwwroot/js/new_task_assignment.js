@@ -62,7 +62,6 @@ for (let i = 0; i < completeButtons.length; i++) {
         if (toggleSections[i].getAttribute("status") !== "completed") {
             document.getElementsByClassName("not-started-div")[i].style.display = "none";
             document.getElementsByClassName("in-progress-div")[i].style.display = "none";
-           // document.getElementsByClassName("btn")[i].style.display = "none";
             document.getElementsByClassName("completed-div")[i].style.display = "block";
             toggleSections[i].setAttribute("status", "completed");
             createNewInput();
@@ -71,8 +70,8 @@ for (let i = 0; i < completeButtons.length; i++) {
 }
 
 document.querySelector(".assignment-completed-btn").addEventListener("click", function () {
-    window.location.href = `../html/main.html`;
     postData();
+    window.location.href = `../html/main.html`;
 });
 
 async function createNewInput() {
@@ -120,38 +119,47 @@ function assignStatus(status, element) {
 }
 
 
-async function postData() {
-    var currentdate = new Date();
-    let date = currentdate.getDate();
-    const response = await fetch('https://localhost:5001/api/Tasks');
-    const tasks = await response.json();
-    let participantOptionString = "[";
-    //if one of the select options are selected and button pressed then it sended to participant options string 
-    participantOptionString += "]";
-    fetch("https://localhost:5001/api/", {
-        method: "POST",
-        body: JSON.stringify({
-            Id: task.Id,
-            RecordTime: date,
-            RefCustomer: task.RefCustomer,
-            ServiceNo: task.ServiceNo,
-            RefTemplateTask: task.RefTemplateTask,
-            Name: task.Name,
-            BeginDate: "-",
-            EndDate: "-",
-            RefTaskStep: task.RefTaskStep,
-            RefTaskStatus: "not-started",
-            RefDepartment: task.RefDepartment,
-            Description: task.Description,
-            Participants: "",
-        }),
+function postData() {
+    const currentdate = new Date();
+    const task = {
+      /*  Id: 5,
+        RecordTime: currentdate.toISOString(),
+        RefCustomer: 1,
+        ServiceNo: "-",
+        RefTemplateTask: 3,
+        Name: "task1",
+        BeginDate: currentdate.toISOString(),
+        EndDate: currentdate.toISOString(),
+        RefTaskStep: 3,
+        RefTaskStatus: 0,
+        RefDepartment: 2,
+        Description: "-",
+        Participants: "-",*/
+    };
+
+    fetch(`https://localhost:5001/api/Tasks`, {
+        method: 'POST',
         headers: {
-            "Content-type": "application/json; charset=UTF-8"
-        }
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(task)
     })
-        .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Success:', data);
+            window.location.reload();
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
 }
+
 
 // Handling creation of new inputs based on selection type
 const inputBtns = document.getElementsByClassName("modal-create-new-input-btn");

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Personel İşlemleri</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="taskName"></div>
+    <div id="description"></div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Oluşturan</th>
+                    <th>Oluşturma Tarihi</th>
+                    <th>Durum</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <details>
+                            <summary>Personeli işe alma işlemleri tanımlamalarını yapınız</summary>
+                            <div class="input-group">
+                                <label>Ad Soyad:</label>
+                                <div id="HireName" class="input-data"></div>  <!-- This will display the hire name -->
+                                <input type="text" id="nameInput" style="display:none;"> <!-- Input field -->
+                            </div>
+                            <div class="input-group">
+                                <label>Departman:</label>
+                                <div id="Department" class="input-data"></div>  <!-- This will display the department -->
+                                <input type="text" id="deptInput" style="display:none;"> <!-- Input field -->
+                            </div>
+                            <!--- <button class="add-input" onclick="addInput(1)">Yeni input oluştur</button> -->
+                            
+                            <button onclick="saveChanges()" style="display:none;" id="saveButton">Save</button>
+                        </details>
+                    </td>
+                    <!-- Ensure this exact ID is used where you want to display the responsible user's name -->
+                    <td>
+                        <div id="ResponsibleUserName">-</div>
+                    </td>
+
+                    <td> <div id="CompletionDate">-</div></td>
+                    <td>
+                        <div id="statusContainer1" class="status-container">
+                            <span class="status" id="Status"></span>
+                            <span class="tick" id="tick1" onclick="complete(1)">&#10003;</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <details>
+                            <summary>Yetkileri belirterek hesap açılma talebini yapar</summary>
+                            <div class="input-group">
+                                <label for="permissions">Yetkiler:</label>
+                                <select id="permissions" name="permissions">
+                                    <option value="">Seçiniz</option>
+                                    <option value="Erişim">Erişim</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                            </div>
+                            <button onclick="saveStatus2()" id="saveButton2">Save</button> <!-- New Save button for the second row -->
+                        </details>
+                    </td>
+                    <td><div id="UserName2">-</div></td>
+                    <td><div id="CompletionDate2">-</div></td>
+                    <td>
+                        <div id="statusContainer2" class="status-container">
+                            <span class="status" id="Status2"></span>
+                            <span class="tick" id="tick2" onclick="complete(2)">&#10003;</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <details>
+                            <summary>Hesabı açıp yetkileri tanımlar</summary>
+                            <div class="input-group1">
+                                <label><input type="checkbox" oninput="updateStatus(3)"> Office programlarına erişim için email hesabı</label><br>
+                                <label><input type="checkbox" oninput="updateStatus(3)"> Sunuculara erişim için hesap</label><br>
+                                <label><input type="checkbox" oninput="updateStatus(3)"> Office programlarına erişim için email hesabı</label><br>
+
+                            </div>
+
+
+                        </details>
+                    </td>
+                    <td><div id="UserName3">-</div></td>
+                    <td><div id="CompletionDate3">-</div></td>
+                    <td>
+                        <div id="statusContainer3" class="status-container">
+                            <span class="status" id="Status3">Başlanmadı</span>
+                            <span class="tick" id="tick3" onclick="complete(3)">&#10003;</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/taskDetail.js"></script>
+</body>
+</html>

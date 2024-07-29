@@ -7,7 +7,7 @@ using Microsoft.Data.SqlClient; // This is necessary if you're using a newer ver
 using Task = System.Threading.Tasks.Task;  // Ensures no conflict with Task entity
 using TaskEntity = WebApplication2.Models.Task;  // Assuming you've renamed your Task model to TaskEntity
 
-public class TaskService 
+public class TaskService
 {
     private readonly MANAGEMENT_BPMContext _context;
 
@@ -25,13 +25,22 @@ public class TaskService
                              .FirstOrDefaultAsync();
     }
 
+    public async Task<List<TaskEntity>> GetTasksById(int Id)
+    {
+        var query = "SELECT * FROM Tasks WHERE Id = {0}";
+        return await _context.Tasks
+                             .FromSqlRaw(query, Id)
+                             .ToListAsync();
+    }
+
     public async Task<bool> InsertTaskAsync(TaskEntity task)
     {
         var sqlParams = new SqlParameter[]
         {
         new SqlParameter("@Name", task.Name ?? (object)DBNull.Value),
         new SqlParameter("@Description", task.Description ?? (object)DBNull.Value),
-            // Add other parameters as needed
+        new SqlParameter("@RefTaskStatus", task.RefTaskStatus ?? (object)DBNull.Value),
+
         };
 
         var result = await _context.Database.ExecuteSqlRawAsync("EXEC sp_InsertTask @Name, @Description", sqlParams);
@@ -44,7 +53,7 @@ public class TaskService
         {
         new SqlParameter("@Id", task.Id),
         new SqlParameter("@Name", task.Name ?? (object)DBNull.Value),
-            // Add other parameters as needed
+        new SqlParameter("@RefTaskStatus", task.RefTaskStatus ?? (object)DBNull.Value),
         };
 
         var result = await _context.Database.ExecuteSqlRawAsync("EXEC sp_UpdateTask @Id, @Name", sqlParams);

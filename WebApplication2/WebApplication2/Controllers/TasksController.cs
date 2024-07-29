@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebApplication2.DTOs;
 using WebApplication2.Interfaces;
 using WebApplication2.Models;
 
@@ -18,10 +19,12 @@ namespace WebApplication2.Controllers
     public class TasksController : ControllerBase
     {
         private readonly MANAGEMENT_BPMContext _context;
+        private readonly TaskService _service;
 
-        public TasksController(MANAGEMENT_BPMContext context)
+        public TasksController(MANAGEMENT_BPMContext context, TaskService service)
         {
             _context = context;
+            _service = service;
         }
 
         // GET: api/Tasks
@@ -52,32 +55,68 @@ namespace WebApplication2.Controllers
         }
 
         // PUT: api/Tasks/5
+      /*       [HttpPut("{id}")]
+             public async Task<IActionResult> PutTask(long id, Task task)
+             {
+                 if (id != task.Id)
+                 {
+                     return BadRequest();
+                 }
+
+                 _context.Entry(task).State = EntityState.Modified;
+                 try
+                 {
+                     await _context.SaveChangesAsync();
+                 }
+                 catch (DbUpdateConcurrencyException)
+                 {
+                     if (!TaskExists(id))
+                     {
+                         return NotFound();
+                     }
+                     else
+                     {
+                         throw;
+                     }
+                 }
+                 return NoContent();
+             }
+       */
+
+        //PUT: api/Tasks/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTask(long id, Task task)
+        public async Task<ActionResult<IEnumerable<TaskEntity>>> UpdateTask(int taskId, TaskUpdateDto updateDto)
         {
-            if (id != task.Id)
+            // Assuming GetHiringDetailsByTaskId returns a list, we fetch the first one as an example
+            var TasksList = await _service.GetTasksById(taskId);
+            if (TasksList == null || !TasksList.Any())
             {
-                return BadRequest();
+                return NotFound($"No hiring detail found with Task ID {taskId}");
             }
 
-            _context.Entry(task).State = EntityState.Modified;
+            // Get the first detail for updating, assuming single task detail management for simplicity
+            var task = TasksList.FirstOrDefault();
+            if (task == null)
+            {
+                return NotFound($"No hiring detail found with Task ID {taskId}");
+            }
+
+            // Apply the updates from DTO
+            if (updateDto.Name != null) task.Name = updateDto.Name;
+            if (updateDto.Description != null) task.Description = updateDto.Description;
+            if (updateDto.RefTaskStatus != null) task.RefTaskStatus = updateDto.RefTaskStatus;
+
             try
             {
-                await _context.SaveChangesAsync();
+                await _service.UpdateTaskAsync(task);
+                return NoContent();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
-                if (!TaskExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return StatusCode(500, "Internal server error: " + ex.Message);
             }
-            return NoContent();
         }
+
 
         // POST: api/Tasks
         [HttpPost]
@@ -91,6 +130,7 @@ namespace WebApplication2.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction("GetTask", new { id = task.Id }, task);
         }
+
 
         // DELETE: api/Tasks/5
         [HttpDelete("{id}")]

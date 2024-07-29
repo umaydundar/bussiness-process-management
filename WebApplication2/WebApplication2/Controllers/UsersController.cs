@@ -78,8 +78,10 @@ namespace WebApplication2.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] User login)
         {
-            var user = await _context.Users
+           var user = await _context.Users
                                      .SingleOrDefaultAsync(u => u.Email == login.Email && u.Password == login.Password);
+
+          //  var user = await _context.Users.SingleOrDefaultAsync(u => u.Email == login.Email && u.Password == CreatePasswordHash(login.Password));
 
             if (user == null)
             {
@@ -179,11 +181,11 @@ namespace WebApplication2.Controllers
             return (_context.Users?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
-      /*  private bool LoginUserExists(string email, string password)
-        {
-            return (_context.Users.Any(u =>u.Email == email && u.Password == password));
-        }
-      */
+        /*  private bool LoginUserExists(string email, string password)
+          {
+              return (_context.Users.Any(u =>u.Email == email && u.Password == password));
+          }
+        */
 
         // Using BCrypt
         private string CreatePasswordHash(string password)
