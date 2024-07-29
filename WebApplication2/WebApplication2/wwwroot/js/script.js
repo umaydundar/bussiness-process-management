@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         taskTable.innerHTML = '';
         filteredTasks.forEach(task => {
             console.log(task);
+            console.log(task);
             const row = taskTable.insertRow();
             const progressPercentage = (task.refTaskStatus / task.refTaskStep) * 100;
 
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             row.insertCell(2).innerHTML = `<progress value="${task.refTaskStatus}" max="${task.refTaskStep}"></progress> ${progressPercentage.toFixed(2)}%`;
             row.insertCell(3).textContent = task.participants;  // Adjust based on your actual API response structure
             row.insertCell(4).textContent = task.refCustomer ;      // Placeholder for creator
+            row.insertCell(4).textContent = task.refCustomer ;      // Placeholder for creator
             row.insertCell(5).textContent = task.beginDate;
             row.insertCell(6).textContent = task.endDate;
 
@@ -51,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function openTaskDetails(id) {
+        window.location.href = `taskDetail.html?taskId=${id}`;  // Assuming you have a detail page setup
     function openTaskDetails(id) {
         window.location.href = `taskDetail.html?taskId=${id}`;  // Assuming you have a detail page setup
     }
