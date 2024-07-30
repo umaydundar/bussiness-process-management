@@ -36,7 +36,6 @@
                                 <input type="text" id="deptInput" style="display:none;"> <!-- Input field -->
                             </div>
                             <!--- <button class="add-input" onclick="addInput(1)">Yeni input oluştur</button> -->
-                            
                             <button onclick="saveChanges()" style="display:none;" id="saveButton">Save</button>
                         </details>
                     </td>
@@ -59,13 +58,12 @@
                             <summary>Yetkileri belirterek hesap açılma talebini yapar</summary>
                             <div class="input-group">
                                 <label for="permissions">Yetkiler:</label>
-                                <select id="permissions" name="permissions">
+                                <select id="permissionsSelect" name="permissions">
                                     <option value="">Seçiniz</option>
                                     <option value="Erişim">Erişim</option>
-                                    <!-- Add more options as needed -->
                                 </select>
                             </div>
-                            <button onclick="saveStatus2()" id="saveButton2">Save</button> <!-- New Save button for the second row -->
+                            <button onclick="saveStatus2()" style="display:none;" id="saveButton2">Save</button>
                         </details>
                     </td>
                     <td><div id="UserName2">-</div></td>
@@ -82,20 +80,18 @@
                         <details>
                             <summary>Hesabı açıp yetkileri tanımlar</summary>
                             <div class="input-group1">
-                                <label><input type="checkbox" oninput="updateStatus(3)"> Office programlarına erişim için email hesabı</label><br>
-                                <label><input type="checkbox" oninput="updateStatus(3)"> Sunuculara erişim için hesap</label><br>
-                                <label><input type="checkbox" oninput="updateStatus(3)"> Office programlarına erişim için email hesabı</label><br>
-
+                                <label><input type="checkbox" id="checkbox1" disabled> Office programlarına erişim için email hesabı</label><br>
+                                <label><input type="checkbox" id="checkbox2" disabled> Sunuculara erişim için hesap</label><br>
+                                <label><input type="checkbox" id="checkbox3" disabled> Office programlarına erişim için email hesabı</label><br>
                             </div>
-
-
+                            <button onclick="saveStatus3()" id="saveButton3" style="display:none;">Save</button>
                         </details>
                     </td>
                     <td><div id="UserName3">-</div></td>
                     <td><div id="CompletionDate3">-</div></td>
                     <td>
                         <div id="statusContainer3" class="status-container">
-                            <span class="status" id="Status3">Başlanmadı</span>
+                            <span class="status" id="Status3"></span>
                             <span class="tick" id="tick3" onclick="complete(3)">&#10003;</span>
                         </div>
                     </td>
