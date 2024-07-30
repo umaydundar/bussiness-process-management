@@ -5,6 +5,5 @@ namespace WebApplication2.DTOs
         public string HireName { get; set; }
         public string Department { get; set; }
         public string Status { get; set; }
-        public string Status2 { get; set; }
     }
 }
