@@ -3,209 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Process</title>
-    <link rel="stylesheet" href="../css/alternative_list_view.css"> 
+    <title>ALTERNATIVE LIST</title>
+    <link rel="stylesheet" href="../css/alternative_list_view.css">
 </head>
 <body>
-    <div class="container">
-        <div class="text-container">
-            <h2 class="text-md-b">Yeni Personel</h2>
-            <h3 class="text-sm-l">Yazılım Ekibi için Kürşat'ın işe başlama işlemleri</h3>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Task Name</th>
-                    <th>Oluşturan</th>
-                    <th>Oluşturma Tarihi</th>
-                    <th>Durum</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="section">
-                            <div  class="toogle-section" onclick="toggleSection(this)">
-                                <div class="arrow-div">
-                                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                        <path d="M7 10l5 5 5-5H7z"/>
-                                    </svg>
-                                    <h1 class="text-sm-b">Kürşatın işe alma işlemleri tanımlamaları yapınız</h1>
-                                </div>
-                            </div>
-                            <div class="section-content">
-                                <div class="input-div">
-                                    <label class="text-sm-l" for="name">Ad Soyad</label>
-                                    <input type="text" class="input-area-si text-sm" id="name" name="name"/>
-                                    <label class="text-sm-l" for="department">Departman</label>
-                                    <input type="text" class="input-area-si text-sm" id="department" name="department"/>
-                                </div>
-                                <div class="add-input">
-                                    <i class="fas fa-plus"></i>
-                                    <h4 class="text-sm-l">+Yeni İnput Oluştur</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="dot-div">
-                            <div class="dots">
-                                <span class="dot-b"></span>
-                            </div>
-                            <h3 class="text-sm-b">Serkan</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <h3 class="text-sm-b">29.02.2024</h3>
-                    </td>
-                    <td>
-                        <div class="not-started-div">
-                            <h3 class="text-sm-b">Başlanmadı</h3>
-                        </div>
-                        <div class="started-div">
-                            <h3 class="text-sm-b">Başlandı</h3>
-                            <button class="btn">Kaydet</button>
-                        </div>
-                        <div>
-                            <div class="in-progress-div">
-                                <h3 class="text-sm-b">Devam ediyor</h3>
-                                <div class="checkmark-continue"></div>
-                            </div>
-                            <button class="btn">Kaydet</button>
-                        </div>
-                        <div class="checkmark-div">
-                            <h3 class="text-sm-b">Tamamlandı</h3>
-                            <div class="checkmark"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="section">
-                            <div  class="toogle-section" onclick="toggleSection(this)">
-                                <div class="arrow-div">
-                                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                        <path d="M7 10l5 5 5-5H7z"/>
-                                    </svg>
-                                    <h1 class="text-sm-b">Yetkileri belirterek hesap açılma talebini yapar</h1>
-                                </div>
-                            </div>
-                            <div class="section-content">
-                                <div class="acces-div">
-                                    <label class="text-sm-l" for="permissions">Yetkiler</label>
-                                    <select class="input-area-si text-sm" id="permissions" name="permissions" required>
-                                        <option value="Erişim">Erişim</option>
-                                    </select>
-                                </div>
-                                <div class="add-input">
-                                    <h4 class="text-sm-l">+Yeni İnput Oluştur</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="dot-div">
-                            <div class="dots">
-                                <span class="dot-b"></span>
-                            </div>
-                            <h3 class="text-sm-b">Kadriye</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <h3 class="text-sm-b">01.03.2024</h3>
-                    </td>
-                    <td>
-                        <div class="not-started-div">
-                            <h3 class="text-sm-b">Başlanmadı</h3>
-                        </div>
-                        <div class="started-div">
-                            <h3 class="text-sm-b">Başlandı</h3>
-                            <div class="margin-between"></div>
-                            <button class="btn">Kaydet</button>
-                        </div>
-                        <div>
-                            <div class="in-progress-div">
-                                <h3 class="text-sm-b">Devam ediyor</h3>
-                                <div class="checkmark-continue"></div>
-                            </div>
-                            <button class="btn">Kaydet</button>
-                        </div>
-                        <div class="checkmark-div">
-                            <h3 class="text-sm-b">Tamamlandı</h3>
-                            <div class="checkmark"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="section">
-                            <div  class="toogle-section" onclick="toggleSection(this)">
-                                <div class="arrow-div">
-                                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                        <path d="M7 10l5 5 5-5H7z"/>
-                                    </svg>
-                                    <h1 class="text-sm-b">Hesabı açıp yetkileri tanımlar</h1>
-                                </div>
-                            </div>
-                            <div class="section-content">
-                                <div>
-                                    <input type="checkbox" id="office-email" name="office-email" unchecked>
-                                    <label class="text-sm-l" for="office-email">Office programlarına erişim için email hesabı</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="server-access" name="server-access" unchecked>
-                                    <label class="text-sm-l" for="server-access">Sunuculara erişim için hesap</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="office-access" name="office-access" unchecked>
-                                    <label class="text-sm-l" for="office-access">Office programlarına erişim için email hesabı</label>
-                                </div>
-                                <div>
-                                    <label class="text-sm-l"for="upload">Dosya Yükle</label>
-                                    <input type="file" id="upload" name="upload">
-                                </div>
-                                <div class="add-input">
-                                    <i class="fas fa-plus"></i>
-                                    <h4 class="text-sm-l">+Yeni İnput Oluştur</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="dot-div">
-                            <div class="dots">
-                                <span class="dot-b"></span>
-                            </div>
-                            <h3 class="text-sm-b">Cafer</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <h3 class="text-sm-b">02.03.2024</h3>
-                    </td>
-                    <td>
-                        <div class="not-started-div">
-                            <h3 class="text-sm-b">Başlanmadı</h3>
-                        </div>
-                        <div class="started-div">
-                            <h3 class="text-sm-b">Başlandı</h3>
-                            <button class="btn">Kaydet</button>
-                        </div>
-                        <div>
-                            <div class="in-progress-div">
-                                <h3 class="text-sm-b">Devam ediyor</h3>
-                                <div class="checkmark-continue"></div>
-                            </div>
-                            <button class="btn">Kaydet</button>
-                        </div>
-                        <div class="checkmark-div">
-                            <h3 class="text-sm-b">Tamamlandı</h3>
-                            <div class="checkmark"></div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div>
+        <center><h1>Yeni Personel</h1></center>
+        <center><h4>İşe Başlama İşlemleri</h4></center>
     </div>
+    <table class="task-list">
+        <thead>
+            <tr>
+                <th>Task Name</th>
+                <th>Oluşturan</th>
+                <th>Oluşturma Tarihi</th>
+                <th>Durum</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="section">
+                        <div class="toggle-section" onclick="toggleSection(this)">
+                            <div class="arrow-div">
+                                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M7 10l5 5 5-5H7z" />
+                                </svg>
+                                <h1 class="text-sm-b" onclick="toggleSection(this)">İşe alma işlemleri tanımlamaları yapınız</h1>
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <div class="input-div">
+                                <label class="text-sm-l" for="name">Ad Soyad</label>
+                                <input type="text" class="input-area-si text-sm" id="name" name="name" />
+                                <label class="text-sm-l" for="department">Departman</label>
+                                <input type="text" class="input-area-si text-sm" id="department" name="department" />
+                            </div>
+                            <div class="add-input">
+                                <i class="fas fa-plus"></i>
+                                <button class="modal-btn text-sm-l" id="new-input-modal-button">+Yeni İnput Oluştur</button>
+                                <button class="btn save-btn" id="save-btn-1">Kaydet</button>
+                            </div>
+                            <!--<div id="new-input-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Choose new input type</p>
+            <select>
+                <option>Text Area</option>
+                <option>Selection box</option>
+                <option>Checkbox</option>
+                <option>File upload</option>
+            </select>
+            <p>New input name</p>
+            <input type="text" class="input-area-si text-sm" id="new-input-name" name="input-name" />
+            <button class="modal-create-new-input-btn">Create New Input</button>
+        </div>
+    </div>-->
+                            <div id="new-input-modal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Choose new input type</p>
+                                    <select id="input-type-select">
+                                        <option value="text">Text Area</option>
+                                        <option value="select">Selection box</option>
+                                        <option value="checkbox">Checkbox</option>
+                                        <option value="file">File upload</option>
+                                    </select>
+                                    <p>New input name</p>
+                                    <input type="text" class="input-area-si text-sm" id="new-input-name" name="input-name" />
+                                    <p id="options-container" style="display:none;">Options</p>
+                                    <textarea id="select-options" class="input-area-si text-sm" style="display:none;"></textarea>
+                                    <button class="modal-create-new-input-btn" id="create-new-input">Create New Input</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="dot-div">
+                        <div class="dots">
+                            <span class="dot-b"></span>
+                        </div>
+                        <select class="input-area-si text-sm" id="assign-users-1" name="assignments" required>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <span id="date1" data-id="date1">-</span>
+                </td>
+                <td>
+                    <div class="not-started-div">
+                        <h3 class="text-sm-b">Başlanmadı</h3>
+                    </div>
+                    <div class="started-div" style="display:none;">
+                        <h3 class="text-sm-b">Başlandı</h3>
+                    </div>
+                    <div class="in-progress-div" style="display:none;">
+                        <div>
+                            <h3 class="text-sm-b">Devam ediyor</h3>
+                            <div class="checkmark-continue"></div>
+                        </div>
+                    </div>
+                    <div class="completed-div" style="display:none;">
+                        <h3 class="text-sm-b">Tamamlandı</h3>
+                        <div class="checkmark"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="section">
+                        <div class="toggle-section" onclick="toggleSection(this)">
+                            <div class="arrow-div">
+                                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M7 10l5 5 5-5H7z" />
+                                </svg>
+                                <h1 class="text-sm-b">Yetkileri belirterek hesap açılma talebini yapar</h1>
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <div class="acces-div">
+                                <label class="text-sm-l" for="permissions">Yetkiler</label>
+                                <select class="input-area-si text-sm" id="permissions" name="permissions" required>
+                                    <option value=" ">Seçiniz</option>
+                                    <option value="Erişim">Erişim</option>
+                                </select>
+                            </div>
+                            <div class="add-input">
+                                <button class="modal-btn text-sm-l" id="new-input-modal-button">+Yeni İnput Oluştur</button>
+                                <button class="btn save-btn" id="save-btn-2">Kaydet</button>
+                            </div>
+                            <div id="new-input-modal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Choose new input type</p>
+                                    <select id="input-type-select">
+                                        <option value="text">Text Area</option>
+                                        <option value="select">Selection box</option>
+                                        <option value="checkbox">Checkbox</option>
+                                        <option value="file">File upload</option>
+                                    </select>
+                                    <p>New input name</p>
+                                    <input type="text" class="input-area-si text-sm" id="new-input-name" name="input-name" />
+                                    <p id="options-container" style="display:none;">Options</p>
+                                    <textarea id="select-options" class="input-area-si text-sm" style="display:none;"></textarea>
+                                    <button class="modal-create-new-input-btn" id="create-new-input">Create New Input</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="dot-div">
+                        <div class="dots">
+                            <span class="dot-b"></span>
+                        </div>
+                        <select class="input-area-si text-sm" id="assign-users-2" name="assignments" required>
+                        </select>
+                    </div>
+                </td>
+                <td><span id="date2" data-id="date2">-</span></td>
+                <td>
+                    <div class="not-started-div">
+                        <h3 class="text-sm-b">Başlanmadı</h3>
+                    </div>
+                    <div class="started-div" style="display:none;">
+                        <h3 class="text-sm-b">Başlandı</h3>
+                    </div>
+                    <div class="in-progress-div" style="display:none;">
+                        <div>
+                            <h3 class="text-sm-b">Devam ediyor</h3>
+                            <div class="checkmark-continue"></div>
+                        </div>
+                    </div>
+                    <div class="completed-div" style="display:none;">
+                        <h3 class="text-sm-b">Tamamlandı</h3>
+                        <div class="checkmark"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="section">
+                        <div class="toggle-section" onclick="toggleSection(this)">
+                            <div class="arrow-div">
+                                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M7 10l5 5 5-5H7z" />
+                                </svg>
+                                <h1 class="text-sm-b">Hesabı açıp yetkileri tanımlar</h1>
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <div>
+                                <input type="checkbox" id="office-email" name="office-email">
+                                <label class="text-sm-l" for="office-email">Office programlarına erişim için email hesabı</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="server-access" name="server-access">
+                                <label class="text-sm-l" for="server-access">Sunuculara erişim için hesap</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="office-access" name="office-access">
+                                <label class="text-sm-l" for="office-access">Office programlarına erişim için email hesabı</label>
+                            </div>
+                            <div>
+                                <label class="text-sm-l" for="upload">Dosya Yükle</label>
+                                <input type="file" id="upload" name="upload">
+
+
+                            </div>
+                            <div class="add-input">
+                                <button class="modal-btn text-sm-l" id="new-input-modal-button">+Yeni İnput Oluştur</button>
+                                <button class="btn save-btn" id="save-btn-3">Kaydet</button>
+                            </div>
+                            <div id="new-input-modal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Choose new input type</p>
+                                    <select id="input-type-select">
+                                        <option value="text">Text Area</option>
+                                        <option value="select">Selection box</option>
+                                        <option value="checkbox">Checkbox</option>
+                                        <option value="file">File upload</option>
+                                    </select>
+                                    <p>New input name</p>
+                                    <input type="text" class="input-area-si text-sm" id="new-input-name" name="input-name" />
+                                    <p id="options-container" style="display:none;">Options</p>
+                                    <textarea id="select-options" class="input-area-si text-sm" style="display:none;"></textarea>
+                                    <button class="modal-create-new-input-btn" id="create-new-input">Create New Input</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="dot-div">
+                        <div class="dots">
+                            <span class="dot-b"></span>
+                        </div>
+                        <select class="input-area-si text-sm" id="assign-users-3" name="assignments" required>
+                        </select>
+                    </div>
+                </td>
+                <td><span id="date3" data-id="date3">-</span></td>
+                <td>
+                    <div class="not-started-div">
+                        <h3 class="text-sm-b">Başlanmadı</h3>
+                    </div>
+                    <div class="started-div" style="display:none;">
+                        <h3 class="text-sm-b">Başlandı</h3>
+                    </div>
+                    <div class="in-progress-div" style="display:none;">
+                        <div>
+                            <h3 class="text-sm-b">Devam ediyor</h3>
+                            <div class="checkmark-continue"></div>
+                        </div>
+                    </div>
+                    <div class="completed-div" style="display:none;">
+                        <h3 class="text-sm-b">Tamamlandı</h3>
+                        <div class="checkmark"></div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <script src="../js/alternative_list_view.js"></script>
 </body>
