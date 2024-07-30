@@ -64,12 +64,12 @@ td {
     gap: 8px;
 }
 
-.dots .dot-b {
-    width: 20px;
-    height: 20px;
-    background-color: var(--dot-color-2nd);
-    border-radius: 50%;
-}
+    .dots .dot-b {
+        width: 20px;
+        height: 20px;
+        background-color: var(--dot-color-2nd);
+        border-radius: 50%;
+    }
 
 .checkmark {
     display: inline-block;
@@ -80,17 +80,17 @@ td {
     position: relative;
 }
 
-.checkmark::after {
-    content: "";
-    position: absolute;
-    left: 7px;
-    top: 4px;
-    width: 5px;
-    height: 10px;
-    border: solid #2bbd4b;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-}
+    .checkmark::after {
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid #2bbd4b;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
 
 .text-sm-b {
     font-size: 0.8rem;
@@ -123,32 +123,35 @@ td {
 .add-input {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    justify-content:space-between;
+   /* margin-top: 10px;*/
 }
-
-.add-input i {
-    margin-right: 5px;
+.save-btn{
+    margin-left:auto;
 }
+    .add-input i {
+        margin-right: 5px;
+    }
 
 .section-content {
     display: none;
 }
 
- .checkmark-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
- }
-
-.in-progress-div{
+.completed-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
 }
 
-.dot-div{
+.in-progress-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -182,21 +185,21 @@ td {
     transform: rotate(180deg);
 }
 
-.toggle-section{
+.toggle-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: left;
 }
 
-.arrow-div{
+.arrow-div {
     display: flex;
     gap: 5px;
 }
 
-.acces-div{
+.acces-div {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -209,20 +212,70 @@ td {
     position: relative;
 }
 
-.checkmark-continue::after {
-    content: "";
-    position: absolute;
-    left: 7px;
-    top: 4px;
-    width: 5px;
-    height: 10px;
-    border: solid var(--table-border-color);
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-}
+    .checkmark-continue::after {
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid var(--table-border-color);
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
 
-.input-div{
+.input-div {
     display: flex;
     flex-grow: calc();
     flex-direction: column;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.modal .modal-create-new-input-btn {
+    display: flex;
+    justify-content: center;
+    background-color: var(--acceptance-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--light-color);
 }
