@@ -60,28 +60,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function filterTasks() {
-        const searchText = searchField.value.toLowerCase();
-        const filterValue = filterField.value;
+    const searchText = searchField.value.toLowerCase();
+    const filterValue = filterField.value;
 
-        let filteredTasks = tasks;
+    console.log('Search Text:', searchText); // Debug: Check the captured input
+    console.log('Filter Value:', filterValue); // Debug: Check the filter dropdown value
 
-        if (searchText) {
-            filteredTasks = filteredTasks.filter(task =>
-                task.name.toLowerCase().includes(searchText) ||
-                task.description.toLowerCase().includes(searchText)
-            );
-        }
+    let filteredTasks = tasks;
 
-        if (filterValue === "completed") {
-            filteredTasks = filteredTasks.filter(task => task.progressPercentage === 100);
-        } else if (filterValue === "active") {
-            filteredTasks = filteredTasks.filter(task => task.progressPercentage > 0 && task.progressPercentage < 100);
-        } else if (filterValue === "pending") {
-            filteredTasks = filteredTasks.filter(task => task.progressPercentage === 0);
-        }
-
-        renderTasks(filteredTasks);
+    if (searchText) {
+        filteredTasks = filteredTasks.filter(task =>
+            (task.name && task.name.toLowerCase().includes(searchText)) ||
+            (task.description && task.description.toLowerCase().includes(searchText))
+        );
+        console.log('Filtered by Search:', filteredTasks); // Debug: See filtered results after search
     }
+
+    switch (filterValue) {
+        case "completed":
+            filteredTasks = filteredTasks.filter(task => task.progressPercentage === 100);
+            break;
+        case "active":
+            filteredTasks = filteredTasks.filter(task => task.progressPercentage > 0 && task.progressPercentage < 100);
+            break;
+        case "pending":
+            filteredTasks = filteredTasks.filter(task => task.progressPercentage === 0);
+            break;
+    }
+
+    console.log('Filtered by Status:', filteredTasks); // Debug: See filtered results after status
+
+    renderTasks(filteredTasks);
+}
 
 
     searchButton.addEventListener('click', filterTasks);
