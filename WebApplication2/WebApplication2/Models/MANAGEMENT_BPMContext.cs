@@ -40,6 +40,8 @@ namespace WebApplication2.Models
         public virtual DbSet<TemplateTaskStepTag> TemplateTaskStepTags { get; set; } = null!;
         public virtual DbSet<TemplateTaskTag> TemplateTaskTags { get; set; } = null!;
         public virtual DbSet<UserLog> UserLogs { get; set; } = null!;
+        public virtual DbSet<HiringDetails> HiringDetails { get; set; } = null!;
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
